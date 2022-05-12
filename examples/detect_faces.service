@@ -1,0 +1,12 @@
+[Unit]
+Description=Face Detection example
+
+[Service]
+Environment=DISPLAY=:0
+Type=simple
+Restart=on-failure
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/aiy-maker-kit/examples/detect_faces.py
+
+[Install]
+WantedBy=multi-user.target

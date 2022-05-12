@@ -1,0 +1,7 @@
+# Python packages required to build the docs
+sphinx
+sphinx_rtd_theme
+recommonmark
+beautifulsoup4
+opencv-python
+tflite_support
