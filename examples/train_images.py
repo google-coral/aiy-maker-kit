@@ -91,7 +91,7 @@ def main():
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--labels', '-l', type=str, required=True,
                         help='Labels file from your training dataset')
-    parser.add_argument('--captures_dir', '-d', type=str,
+    parser.add_argument('--capture_dir', '-d', type=str,
                         default='captures',
                         help='Captures directory with your training images')
     parser.add_argument('--model', '-m', type=str,
