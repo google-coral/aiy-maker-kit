@@ -140,7 +140,7 @@ def main():
                         help='Labels file')
     parser.add_argument('--continuous', '-c', type=int, default=0,
                         help='Continuously capture the number of specified images')
-    parser.add_argument('--captures_dir', '-d', type=str, default='captures',
+    parser.add_argument('--capture_dir', '-d', type=str, default='captures',
                         help='Directory for image captures')
     parser.add_argument('--capture_device_index', '-i', type=int, default=0,
                         help='Hardware capture device index')
@@ -157,7 +157,7 @@ def main():
             timestamp = datetime.now()
             filename = "PI_CAM_" + timestamp.strftime(
                 "%Y%m%d_%H%M%S%f") + '.png'
-            return os.path.join(args.captures_dir, class_dir, filename)
+            return os.path.join(args.capture_dir, class_dir, filename)
 
         # Handle key events from GUI window.
         def handle_key(key, frame):
